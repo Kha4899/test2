@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello CR7</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        background-color: #0f172a;
+        color: #ffffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .cover-container {
+        width: 100%;
+        height: 70vh;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+      }
+      .cover-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+      }
+      .overlay {
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+          to bottom,
+          rgba(0, 0, 0, 0.2) 0%,
+          rgba(15, 23, 42, 0.95) 100%
+        );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+      }
+      .title {
+        font-size: 4rem;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        color: #ffffff;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+      }
+      .subtitle {
+        font-size: 1.3rem;
+        color: #38bdf8;
+        margin-top: 8px;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cover-container">
+      <img
+        src="cr7.jpg"
+        alt="Cristiano Ronaldo"
+        class="cover-image"
+        onerror="
+          this.src =
+            'https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg'
+        "
+      />
+      <div class="overlay">
+        <h1 class="title">Hello</h1>
+        <p class="subtitle">Cristiano Ronaldo - CR7 (Siuuu! ⚽)</p>
+      </div>
+    </div>
+  </body>
+</html>
